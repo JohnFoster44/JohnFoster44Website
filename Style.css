@@ -23,7 +23,6 @@ ul {
     position: fixed;
     top: 0;
     width:100%;
-    background: linear-gradient(to top, transparent, #0a517d)
 }
 
 li {
@@ -33,7 +32,7 @@ li {
 li a {
     display: block;
     color: #115981;
-    text-shadow: 2px 2px 5px #000700;
+    text-shadow: 2px 2px 5px #000007;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -64,6 +63,9 @@ li a:hover {
     padding-bottom: 0px
 }
 
+.gradient {    
+    background-image: linear-gradient(#000007 25%, #0a517d 100%);
+}
 .section-a-container{
     display: flex;
     justify-content: center;
@@ -77,9 +79,9 @@ li a:hover {
     height:100vh;    
     align-items: center;
     text-align: center;
-    background-color: #000007;
+    /*background-color: #000007;
     background-size:cover;
-    background-position:center;
+    background-position:center;*/
 }
 
 .section-b-container {
@@ -98,9 +100,10 @@ li a:hover {
     text-align: center;
     padding:10 10px;
     color: #0a517d;
-    background-color: #000007;
+    text-shadow: #000007;
+    /*background-color: #000007;
     background-size:cover;
-    background-position:center;
+    background-position:center;*/
 }
 
 .section-c-container {
@@ -110,7 +113,7 @@ li a:hover {
 }
 
 #section-c {
-    background-color: #000007;
+    background-color:#0a517d ;
     background-size:cover;
     background-position:center;
     height:10vh;
@@ -120,7 +123,7 @@ li a:hover {
     align-items: center;
     text-align: center;
     padding:10 10px;
-    color: #0a517d;
+    color: #000007;
 }
 
 /** arrow **/
