@@ -157,15 +157,15 @@ body {
   border-style: solid;
   border-radius: 1.5%;
   margin: 3%;
-
   /* border: #ffae00;
   border-style: solid; */
 }
 
 .project p {
   color: #000000;
-  text-align: center;
-  font-size: 1.2em;
+  text-align: left;
+  font-size: 1em;
+  width: 100%;
 }
 
 .project a {
@@ -181,11 +181,17 @@ body {
 }
 
 .fo4_logo {
-  height: 500px;
+  height: 300px;
   width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project2img {
-  height: 500px;
+  height: 300px;
   width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
