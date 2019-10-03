@@ -1,0 +1,70 @@
+body {
+  background: lightgray;
+}
+
+#greenFlag {
+  color: green;
+}
+
+#whiteFlag {
+  color: white;
+}
+
+#redFlag {
+  color: red;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#mainNavbar .navbar-brand {
+  color: #b8b8b8;
+  font-size: 1.5rem;
+}
+
+#headingGroup h1 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+.navbar.scrolled {
+  background: #242424;
+  transition: background 500ms;
+}
+
+.carousel-inner {
+  height: auto;
+  width: 100vw;
+}
+
+.container {
+  padding: 10%;
+}
+
+.reservetext {
+  padding: 10px;
+}
+
+.bookingpic {
+  background-image: url(https://images.pexels.com/photos/3498/italian-pizza-restaurant-italy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  width: 100vw;
+}
+
+.jumbotron {
+    background: rgba(36, 36, 36, 0.5);
+    color: white;
+}
+
+@media (max-width: 2000px) {
+  #headingGroup h1 {
+    font-weight: 100;
+    font-size: 3rem;
+  }
+}
