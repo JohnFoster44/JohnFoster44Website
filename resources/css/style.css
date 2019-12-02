@@ -1,198 +1,126 @@
 /*-----general---------------------------------------------*/
 body {
-  background-color: #4e4e4e;
+  background-color: #fff5fd;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 1em;
-  text-rendering: optimizeLegibility;
   background-image: url("../img/guillaume-galtier-493400-unsplash.jpg");
   background-attachment: fixed;
   color: #fff5fd;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  height: 100vh;
-  margin: 0;
-
-  /* border: #44e;
-  border-style: dashed; */
+  overflow-x: hidden;
+  padding-top: 10px;
 }
 
-/*-----top-----------------------------------------------*/
-
-.title-box {
-  font-size: 130%;
-  width: 10%;
-  height: 95%;
-
-  /* border: #c00202;
-  border-style: solid; */
+h3, h4{
+  font-family: 'Calistoga', cursive;
 }
 
-.title-box h1 {
-  margin: 1px 7px;
-  padding-left: 10px;
-  width: 250px;
-  text-align: left;
-  letter-spacing: 3px;
+p{
+  font-weight: 500;
 }
 
-/*------link--------------------------------------------*/
+footer {
+  color: #fffdff;
+  border-top: #fffdff solid 1px;
+}
 
 .nav {
-  font-size: 170%;
-  text-align: center;
-  width: 9%;
-  margin: 10px;
-
-  /* border: #3ac91d;
-  border-style: solid; */
-}
-
-.nav li a {
-  text-decoration: none;
-  color: #fff5fd;
-  transition: 0.8s ease;
-  padding-bottom: 10px;
-}
-
-.nav li a:hover {
-  text-decoration: none;
-  color: transparent;
-  text-shadow: 0 0 5px #fff5fd;
-}
-
-.nav ul {
-  list-style-type: none;
+  justify-content: space-around;
   list-style: none;
-  font-size: 1.5em;
-  margin-top: 0%;
-  padding: 0;
+  text-align: center;
 }
 
-/*---------footer----------------------------------------*/
-
-.footer {
-  width: 100%;
-  height: 7%;
-
-  /* border: #840b9c;
-  border-style: solid; */
+#my-pic{
+  display: block;
+  margin: 0 auto;
+  height: 250px;
+  width: auto;
+  padding: 20px 0 20px 0;
 }
 
-.footer img {
-  height: 70px;
-  mix-blend-mode: screen;
+#name{
+  font-family: 'Calistoga', cursive;
+  text-align: center;
+  color: #fffdff;
+}
+
+#name h1{
+  font-size: 3em;
+}
+
+#bio{
+  padding: 20px 20px 0 20px;
+  font-size: 1.1em;
+  color: #fffdff;
+  text-align: left;
+}
+
+#links i {
+  color: #fffdff;
+  height: 50px;
   transition: 0.8s ease;
 }
 
-.footer img:hover {
-  height: 70px;
+#links i:hover {
+  height: 50px;
   opacity: 0.6;
   filter: blur(8px);
 }
 
-/*---------body-----------------------------------------*/
-
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 65%;
-
-  /* border: #fffb00;
-  border-style: solid; */
+#projects{
+  padding-top: 30px;
+  color: #fffdff;
+  text-align: center;
 }
 
-.words {
-  mix-blend-mode: screen;
-  padding: 25% 0;
-
-  /* border: #ff0055;
-  border-style: solid; */
-}
-
-/*--center--words--*/
-.words h3 {
-  font-size: 6em;
-  margin: 0%;
-}
-
-/*--small--center--words--*/
-.words p {
-  margin: 0%;
-  font-size: 1.3em;
-}
-
-/*Music--album--covers--*/
-.pix {
-  padding-top: 15%;
-
-  /* border: #ff0055;
-  border-style: dotted; */
-}
-
-.pix img {
-  height: 500px;
-  width: auto;
-  transition: 2s ease;
-}
-
-.pix img:hover {
-  height: 550px;
-  width: auto;
-  filter: blur(1.6px);
-}
-
-/*projects---------------------------------------------------------*/
-
-.project {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 3% 1%;
-  border: #fff5fd;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-radius: 1.5%;
-  margin: 3%;
-  /* border: #ffae00;
-  border-style: solid; */
-}
-
-.project p {
-  color: #000000;
-  text-align: left;
-  font-size: 1em;
-  width: 100%;
-}
-
-.project a {
-  text-decoration: none;
-}
-
-.project {
-  transition: 0.8s ease;
-}
-
-.project:hover {
-  filter: blur(1.2px);
-}
-
-.fo4_logo {
-  height: 300px;
-  width: auto;
+#proj-pics{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10%;
 }
 
-.project2img {
-  height: 300px;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #name{
+    text-align: left;
+  }
+
+  #name h1{
+    font-size: 3.5em;
+  }
+
+  #bio{
+    font-size: 1.5em;  
+    padding-top: 50px;
+  }
+
+  #bio h3{
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #my-pic{
+    height: 350px;
+    width: auto;
+  }
+
+  #projects h4{
+    font-size: 2.3em;
+    padding-top: 30px;
+  }
+
+  #projects p{
+    font-size: 1.3em;
+    padding-top: 90px;
+    padding-right: 90px;
+    text-align: left;
+  }
 }
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  
+    
+}*/
