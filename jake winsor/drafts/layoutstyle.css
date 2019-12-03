@@ -1,0 +1,41 @@
+.top{
+    height: 10vh;
+    width: auto;
+    border: black solid;
+    text-align: center;
+}
+
+.name{
+    height: 5vh;
+    width: 45%;
+    border: black solid;
+    float: left;
+}
+
+.social{
+    height: 5vh;
+    width: 45%;
+    border: black solid;
+    float: right;
+}
+
+.space{
+    height: 70vh;
+    width: auto;
+    border: black solid;
+}
+.video{
+    height: 50vh;
+    width: auto;
+    border: black solid;
+}
+.about{
+    height: 30vh;
+    width: auto;
+    border: black solid;
+}
+.footer{
+    height: 5vh;
+    width: auto;
+    border: black solid;
+}

@@ -1,0 +1,140 @@
+body{
+background-color: #fbf7f5;
+color: #221D10;
+padding-top: 10px;
+}
+
+i {
+  color: #221D10;
+}
+
+i:hover{
+  color: #550C72;
+}
+
+span{
+  font-size: 0.7em;
+}
+
+.nav {
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+
+#jake {
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 0.2rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #221D10;
+}
+
+#about {
+  color: #221D10;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+#pic-container {
+  padding: 0;
+}
+
+#picture {
+  padding: 35px 0 0 35px ;
+  height: 90%;
+}
+
+#vid {
+  padding: 10px;
+}
+
+#bio {
+  padding: 50px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+#footer {
+  color: #fbf7f5;
+  background-color: #221D10;
+}
+
+#footer a {
+  color: #00BEC5;
+  text-decoration: none;
+}
+}
+
+#footer a:hover {
+  color: #fbf7f5;
+}
+
+/* Media Queries */
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  .nav{
+    margin: 15px;
+  }
+
+  #picture{
+    padding: 50px 0 0 50px ;
+    height: 80%;
+  }
+
+  #about {
+    text-align: left;
+    padding: 100px 50px;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  #vid {
+    padding: 0 50px 0 50px;
+  }
+
+  #bio {
+    font-size: 1.1rem;
+  }
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #jake {
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  .nav {
+    margin: 15px;
+    justify-content: right;
+    padding-right: 50px;
+  }
+  
+  #picture{
+    padding: 50px 0 0 150px ;
+    height: 80%;
+  }
+
+  #pic-container{
+    height: 700px;
+  }
+
+  #about {
+    font-size: 2em;
+    padding: 160px 100px 0 0 ;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  
+    
+}*/
