@@ -10,6 +10,14 @@ body {
   padding-top: 10px;
 }
 
+.header{
+  border-bottom: .1px solid #fff5fd;
+}
+
+h1 {
+  text-align: center;
+}
+
 h3, h4{
   font-family: 'Calistoga', cursive;
 }
@@ -67,9 +75,9 @@ footer {
 }
 
 #projects{
-  padding-top: 30px;
   color: #fffdff;
   text-align: center;
+  border-top: .1px solid white;
 }
 
 #projects a{
