@@ -89,6 +89,10 @@ body {
     color: white;
 }
 
+#map {
+  padding: 5px;
+  display: none;
+}
 
 @media (max-width: 2000px) {
   #headingGroup h1 {

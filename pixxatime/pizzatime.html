@@ -138,6 +138,8 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
           <h1 class="reservetext">Reserve a table</h1>
+          <p class="lead font-weight-bold">01234 567890</p>
+
           <p class="lead">
             Monday - Friday: 11pm-11:30pm
           </p>
@@ -147,7 +149,12 @@
           <p class="lead">
             Sunday: 12pm-10pm
           </p>
-          <button type="button" class="btn btn-light btn-lg">Book Now!</button>
+
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40314.60204856757!2d-0.14120896783804107!3d50.837412709743866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758509f6294167%3A0x9cc6af7a727d0ef9!2sBrighton!5e0!3m2!1sen!2suk!4v1583854070294!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+  
+          <button id="bookingButton" class="btn btn-light btn-lg">Find us!</button>
         </div>
       </div>
     </div>
@@ -177,14 +184,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
 
-    <script>
-      $(function() {
-        $(document).scroll(function() {
-          var $nav = $("#mainNavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
   </body>
 </html>
