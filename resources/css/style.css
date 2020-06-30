@@ -10,10 +10,6 @@ body {
   padding-top: 10px;
 }
 
-.header{
-  border-bottom: .1px solid #fff5fd;
-}
-
 h1 {
   text-align: center;
 }
@@ -26,9 +22,22 @@ p{
   font-weight: 500;
 }
 
+.hrStyle{
+  border-top: #fffdff 1px solid;
+}
+
 footer {
   color: #fffdff;
-  border-top: #fffdff solid 1px;
+  border-top: #fffdff solid 2px;
+}
+
+.frame{
+  border: 1.5px solid white;
+  padding-top: 20px;
+}
+
+.cvlink{
+  text-align: center;
 }
 
 .nav {
@@ -40,7 +49,7 @@ footer {
 #my-pic{
   display: block;
   margin: 0 auto;
-  height: 250px;
+  height: 200px;
   width: auto;
   padding: 20px 0 20px 0;
 }
@@ -56,7 +65,7 @@ footer {
 }
 
 #bio{
-  padding: 20px 20px 0 20px;
+  padding: 10px 20px 0 20px;
   font-size: 1.1em;
   color: #fffdff;
   text-align: left;
@@ -77,7 +86,7 @@ footer {
 #projects{
   color: #fffdff;
   text-align: center;
-  border-top: .1px solid white;
+  padding-top: 15px;
 }
 
 #projects a{
@@ -85,27 +94,35 @@ footer {
 }
 
 #proj-pics{
-  display: block;
   margin: 0 auto;
   height: auto;
   width: 200px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10%;
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+
+  .frame{
+    margin-top: 40px;
+  }
+
   #name{
     text-align: left;
   }
 
   #name h1{
-    font-size: 3.5em;
+    font-size: 4em;
+  }
+
+  #links{
+    padding-top: 5px;
   }
 
   #bio{
     font-size: 1.5em;  
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
 
   #bio h3{
@@ -121,13 +138,17 @@ footer {
 
   #projects h4{
     font-size: 2.3em;
-    padding-top: 30px;
+    padding: 15px 0 ;
+  }
+
+  #projects h5{
+    padding: 15px 0;
+    font-size: 1.3em;
   }
 
   #projects p{
     font-size: 1.3em;
-    padding-top: 90px;
-    padding-right: 90px;
+    padding: 20px 20px 0 50px;
     text-align: left;
   }
 }
