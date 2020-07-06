@@ -104,8 +104,12 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+  .top{
+    padding-top: 20px;
+  }
+
   .frame{
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   #name{
