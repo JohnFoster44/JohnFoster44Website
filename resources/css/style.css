@@ -135,22 +135,39 @@ footer {
 #showcase p {
   font-size: 23px;
 }
-
+/* sugar glaze pic */
 #showcasePic{
   display: flex;
-  margin: 50px 0 30px 0;
+  max-width: 93vh;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
 }
 
+#showcasePic img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* dating pic */
 #showcasePic2{
   display: flex;
   height: auto;
   width: 50%;
   margin: 50px 0 30px 0;
 }
-
+/* screenshots */
 .screenshot{
   display: flex;
-  margin: 10px 0;
+  max-width: 93vh;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+}
+.screenshot img{
+  width: 90vw;
+  height: auto;
+  max-height: 100%;
 }
 
 .subhead{
