@@ -1,4 +1,12 @@
 /*-----general---------------------------------------------*/
+:root {
+  --main-white: #fff5fd;
+  --alt-white: #fffdff30;
+  --light-pink: #ffedfb;
+  --main-black: #383838;
+  --link-blue: #007bff;
+}
+
 body {
   background-color: #fff5fd;
   font-family: "Lato", "Arial", sans-serif;
@@ -14,65 +22,81 @@ h1 {
   text-align: center;
 }
 
-h3, h4{
-  font-family: 'Calistoga', cursive;
+h2, h3,
+h4 {
+  font-family: "Calistoga", cursive;
+  color: var(--main-black);
 }
 
-p{
+p {
   font-weight: 500;
 }
 
-.hrStyle{
-  border-top: #fffdff 1px solid;
-}
-
 footer {
-  color: #fffdff;
-  border-top: #fffdff solid 2px;
+  color: var(--main-white);
+  border-top: 2px solid var(--main-white);
 }
 
-.frame{
-  border: 5px solid white;
+/* hrs */
+.hrStyle {
+  border-top: 2px dashed var(--main-white);
+}
+
+.hrStyleBold {
+  border-top: 4px solid var(--main-white);
+}
+/* bio frame */
+.frame {
+  border: 5px solid var(--main-black);
+  background-color: var(--alt-white);
   padding-top: 20px;
 }
 
-.cvlink{
+/* .cvlink{
   text-align: center;
-}
+} */
 
+/* nav bar */
 .nav {
   justify-content: space-around;
   list-style: none;
   text-align: center;
 }
 
-#my-pic{
-  display: block;
+#my-pic {
+  display: none;
   margin: 0 auto;
   height: 200px;
   width: auto;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 20px 0;
 }
 
-#name{
-  font-family: 'Calistoga', cursive;
+#name {
+  font-family: "Calistoga", cursive;
   text-align: center;
-  color: #fffdff;
+  color: var(--main-black);
 }
 
-#name h1{
+#name h1 {
   font-size: 3em;
 }
 
-#bio{
+#bio {
   padding: 10px 20px 0 20px;
   font-size: 1.1em;
-  color: #fffdff;
+  color: var(--main-black);
   text-align: left;
 }
 
+/* page navigation */
+#anchor {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
 #links i {
-  color: #fffdff;
+  color: var(--main-black);
   height: 50px;
   transition: 0.8s ease;
 }
@@ -83,17 +107,17 @@ footer {
   filter: blur(8px);
 }
 
-#projects{
-  color: #fffdff;
+#projects {
+  color: var(--main-black);
   text-align: center;
   padding-top: 15px;
 }
 
-#projects a{
-  color: #006EE5;
+#projects a {
+  color: #007bff;
 }
 
-#proj-pics{
+#proj-pics {
   margin: 0 auto;
   height: auto;
   width: 200px;
@@ -101,56 +125,104 @@ footer {
   border-radius: 10%;
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+/* design pages */
 
-  .top{
+#showcase {
+  display: flex;
+  padding: 30px 0 ;
+}
+
+#showcase p {
+  font-size: 23px;
+}
+
+#showcasePic{
+  display: flex;
+  margin: 50px 0 30px 0;
+}
+
+#showcasePic2{
+  display: flex;
+  height: auto;
+  width: 50%;
+  margin: 50px 0 30px 0;
+}
+
+.screenshot{
+  display: flex;
+  margin: 10px 0;
+}
+
+.subhead{
+  margin: 20px 0;
+  font-size: 30px;
+  padding-top: 40px;
+  border-top: 5px solid var(--main-black);
+}
+
+@media (min-width: 575px) {
+  #my-pic {
+    display: block;
+    padding-top: 70px;
+    height: 250px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .top {
     padding-top: 20px;
   }
 
-  .frame{
+  .frame {
     margin-top: 20px;
+    color: var(--main-black);
+    border: 5px solid var(--main-black);
+    background-color: var(--alt-white);
+    padding-top: 20px;
   }
 
-  #name{
+  #name {
     text-align: left;
   }
 
-  #name h1{
+  #name h1 {
     font-size: 4em;
   }
 
-  #links{
+  #links {
     padding-top: 5px;
   }
 
-  #bio{
-    font-size: 1.5em;  
+  #bio {
+    font-size: 1.5em;
     /* padding-top: 50px; */
   }
 
-  #bio h3{
+  #bio h3 {
     font-size: 1.5em;
     text-align: center;
     padding-bottom: 20px;
   }
 
-  #my-pic{
+  #my-pic {
+    display: block;
     height: 350px;
     width: auto;
+    padding-top: 0;
   }
 
-  #projects h4{
+  #projects h4 {
     font-size: 2.3em;
-    padding: 15px 0 ;
+    padding: 15px 0;
   }
 
-  #projects h5{
+  #projects h5 {
     padding: 15px 0;
     font-size: 1.3em;
   }
 
-  #projects p{
+  #projects p {
     font-size: 1.3em;
     padding: 20px 20px 0 50px;
     text-align: left;
