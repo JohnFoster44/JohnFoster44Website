@@ -2,9 +2,10 @@
 :root {
   --main-white: #fff5fd;
   --alt-white: #fffdff30;
-  --light-pink: #ffedfb;
   --main-black: #383838;
+  --alt-black: #38383840;
   --link-blue: #007bff;
+  --light-pink: #ffedfb;
 }
 
 body {
@@ -22,8 +23,9 @@ h1 {
   text-align: center;
 }
 
-h2, h3,
-h4 {
+h2,
+h3,
+h4, h5 {
   font-family: "Calistoga", cursive;
   color: var(--main-black);
 }
@@ -34,27 +36,15 @@ p {
 
 footer {
   color: var(--main-white);
-  border-top: 2px solid var(--main-white);
+  font-weight: 600;
 }
 
-/* hrs */
-.hrStyle {
-  border-top: 2px dashed var(--main-white);
-}
-
-.hrStyleBold {
-  border-top: 4px solid var(--main-white);
-}
 /* bio frame */
 .frame {
   border: 5px solid var(--main-black);
   background-color: var(--alt-white);
   padding-top: 20px;
 }
-
-/* .cvlink{
-  text-align: center;
-} */
 
 /* nav bar */
 .nav {
@@ -125,18 +115,25 @@ footer {
   border-radius: 10%;
 }
 
+.project-outline {
+  border: 2.5px solid var(--main-black);
+  background-color: var(--alt-white);
+  margin: 5px 5px;
+}
+
 /* design pages */
 
 #showcase {
   display: flex;
-  padding: 30px 0 ;
+  padding: 30px 0;
 }
 
 #showcase p {
   font-size: 23px;
 }
+
 /* sugar glaze pic */
-#showcasePic{
+#showcasePic {
   display: flex;
   max-width: 93vh;
   margin: 0;
@@ -144,41 +141,42 @@ footer {
   align-items: flex-start;
 }
 
-#showcasePic img{
+#showcasePic img {
   display: block;
   width: 100%;
   height: auto;
 }
+
 /* dating pic */
-#showcasePic2{
+#showcasePic2 {
   display: flex;
   height: auto;
   width: 50%;
   margin: 50px 0 30px 0;
   align-items: flex-start;
-
 }
 
-#showcasePic2 img{
+#showcasePic2 img {
   display: block;
   width: 100%;
   height: auto;
 }
 /* screenshots */
-.screenshot{
+.screenshot {
   display: flex;
   max-width: 93vh;
   margin: 0;
   padding: 0;
   align-items: flex-start;
 }
-.screenshot img{
+
+.screenshot img {
   width: 90vw;
   height: auto;
   max-height: 100%;
 }
 
-.subhead{
+.subhead {
   margin: 20px 0;
   font-size: 30px;
   padding-top: 40px;
@@ -205,6 +203,7 @@ footer {
     border: 5px solid var(--main-black);
     background-color: var(--alt-white);
     padding-top: 20px;
+    box-shadow: 0 4px 8px 0 var(--alt-black), 0 6px 20px 0 var(--alt-black);
   }
 
   #name {
@@ -221,7 +220,6 @@ footer {
 
   #bio {
     font-size: 1.5em;
-    /* padding-top: 50px; */
   }
 
   #bio h3 {
