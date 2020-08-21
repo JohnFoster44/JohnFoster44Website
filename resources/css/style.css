@@ -116,9 +116,10 @@ footer {
 }
 
 .project-outline {
-  border: 2.5px solid var(--main-black);
+  border: 2px solid var(--main-black);
   background-color: var(--alt-white);
   margin: 5px 5px;
+  border-radius: 5px;
 }
 
 /* design pages */
