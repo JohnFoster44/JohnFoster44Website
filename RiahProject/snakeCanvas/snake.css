@@ -1,0 +1,64 @@
+@font-face {
+  font-family: W95FA;
+  src: url("/resources/W95FA/w95fa.woff");
+}
+
+#game-area {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 7px;
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  font-family: W95FA;
+  overflow: hidden;
+}
+
+#gameCanvas {
+  position: absolute;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background-color: #9bbc0f;
+  border: 2px solid #8bac0f;
+  margin: 5px;
+}
+
+.score {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 5px;
+  color: black;
+}
+
+.information {
+  position: absolute;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  margin: 5px;
+  border: 2px solid rgba(10, 10, 10, 0.4);
+  background-color: rgba(10, 10, 10, 0.4);
+}
+
+.text {
+  position: absolute;
+  padding: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.text div {
+  text-align: center;
+}
+
+#heading {
+  font-size: 30px;
+}
+
+#line1,
+#line2 {
+  font-size: 20px;
+  padding: 10px;
+}
