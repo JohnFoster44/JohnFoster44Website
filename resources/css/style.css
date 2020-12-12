@@ -1,7 +1,7 @@
 /*-----general---------------------------------------------*/
 :root {
   --main-white: #fff5fd;
-  --alt-white: #fffdff50;
+  --alt-white: #fffdff70;
   --main-black: #383838;
   --alt-black: #38383840;
   --link-blue: #007bff;
@@ -12,6 +12,8 @@ body {
   background-color: #fff5fd;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 1em;
+  padding: 0;
+  margin: 0;
   background-image: url("../img/guillaume-galtier-493400-unsplash.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -43,12 +45,27 @@ footer {
 
 /* bio frame */
 .frame {
-  border: 5px solid var(--main-black);
-  background-color: var(--alt-white);
-  /* border-radius: 20px; */
-  padding: 10px 0;
-  box-shadow: 0 4px 8px 0 var(--alt-black), 0 6px 20px 0 var(--alt-black);
+  /* border: 5px solid var(--main-black); */
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: 'poppins', sans-serif;
+  color: #202020;
+  text-align: center;
+}
 
+.bio-shadow{
+  box-shadow: 0 4px 8px 0 var(--alt-black), 0 6px 20px 0 var(--alt-black);
+}
+
+.pads{
+  margin-top: 20px;
+  padding: 15px;
 }
 
 /* nav bar */
@@ -61,14 +78,35 @@ footer {
 #my-pic {
   display: none;
   margin: 0 auto;
-  height: 200px;
+  height: 100px;
   width: auto;
-  /* border-radius: 20px;
+  border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
-  -o-border-radius: 20px; */
+  -o-border-radius: 20px;
 }
+
+/* .glass{
+  height: 400px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: 'poppins', sans-serif;
+  color: #202020;
+  text-align: center;
+} */
 
 #name {
   font-family: "Calistoga", cursive;
@@ -110,7 +148,8 @@ footer {
 #links i:hover {
   height: 50px;
   opacity: 0.6;
-  filter: blur(8px);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 
 #projects {
@@ -245,7 +284,7 @@ footer {
 
   #my-pic {
     display: block;
-    height: 350px;
+    height: 300px;
     width: auto;
   }
 
