@@ -5,21 +5,21 @@
   --main-black: #383838;
   --alt-black: #38383840;
   --link-blue: #007bff;
-  --light-pink: #ffedfb;
+  --light-pink: #f7bce9;
 }
 
 body {
-  background-color: #fff5fd;
+  background-color: var(--light-pink);
   font-family: "Lato", "Arial", sans-serif;
   font-size: 1em;
-  padding: 0;
+  padding: 5px;
   margin: 0;
   background-image: url("../img/guillaume-galtier-493400-unsplash.jpg");
+  backdrop-filter: blur(3px);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow-x: hidden;
-  padding: 10px;
 }
 
 h1 {
@@ -28,7 +28,8 @@ h1 {
 
 h2,
 h3,
-h4, h5 {
+h4,
+h5 {
   font-family: "Calistoga", cursive;
   color: var(--main-black);
   margin: 0;
@@ -45,26 +46,26 @@ footer {
 
 /* bio frame */
 .frame {
-  /* border: 5px solid var(--main-black); */
-  padding: 15px 0;
+  margin-top: 15px;
+  padding: 15px 10px;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  font-family: 'poppins', sans-serif;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-family: "poppins", sans-serif;
   color: #202020;
   text-align: center;
 }
 
-.bio-shadow{
+.bio-shadow {
   box-shadow: 0 4px 8px 0 var(--alt-black), 0 6px 20px 0 var(--alt-black);
 }
 
-.pads{
-  margin-top: 20px;
+.pads {
+  margin-top: 25px;
   padding: 15px;
 }
 
@@ -86,27 +87,6 @@ footer {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-
-/* .glass{
-  height: 400px;
-  width: 400px;
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  font-family: 'poppins', sans-serif;
-  color: #202020;
-  text-align: center;
-} */
 
 #name {
   font-family: "Calistoga", cursive;
@@ -150,33 +130,6 @@ footer {
   opacity: 0.6;
   filter: blur(3px);
   -webkit-filter: blur(3px);
-}
-
-#projects {
-  color: var(--main-black);
-  text-align: center;
-  padding-top: 15px;
-}
-
-#projects a {
-  color: #007bff;
-}
-
-#proj-pics {
-  margin: 0 auto;
-  height: auto;
-  width: 200px;
-  padding: 5px;
-  border-radius: 10%;
-}
-
-.project-outline{
-  border: 2px solid var(--main-black);
-  background-color: white;
-  filter: blur(5px);
-  margin: 5px 5px;
-  border-radius: 5px;
-  -webkit-filter: blur(5px);
 }
 
 /* design pages */
@@ -242,7 +195,6 @@ footer {
 }
 
 @media (min-width: 575px) {
-
   #my-pic {
     display: block;
     height: 200px;
@@ -257,11 +209,10 @@ footer {
 
   .frame {
     color: var(--main-black);
-    /* border: 5px solid var(--main-black); */
     background-color: var(--alt-white);
   }
 
-  #name{
+  #name {
     text-align: left;
   }
 
@@ -309,3 +260,51 @@ footer {
 @media (min-width: 1200px) {  
     
 }*/
+
+/* .glass{
+  height: 400px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: 'poppins', sans-serif;
+  color: #202020;
+  text-align: center;
+} */
+
+/* #projects {
+  color: var(--main-black);
+  text-align: center;
+  padding-top: 15px;
+}
+
+#projects a {
+  color: #007bff;
+}
+
+#proj-pics {
+  margin: 0 auto;
+  height: auto;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.project-outline {
+  border: 2px solid var(--main-black);
+  background-color: white;
+  filter: blur(5px);
+  margin: 5px 5px;
+  border-radius: 5px;
+  -webkit-filter: blur(5px);
+} */
