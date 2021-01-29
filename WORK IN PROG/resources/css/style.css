@@ -1,0 +1,253 @@
+/* --------------------------- MOBILE FIRST --------------------------- */
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: black;
+  z-index: -101;
+  font-size: 16px;
+}
+
+h1 {
+  color: #ffd5fb;
+  margin: 0 0.6em;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: #ffd5fb solid 1px;
+  width: fit-content;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.sep {
+  padding: 2rem;
+}
+
+/* --------------------------- VIDEO BKG --------------------------- */
+
+#full_sc_vid {
+  position: fixed;
+  width: auto;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+/* --------------------------- TITLE & SUBTITLE --------------------------- */
+
+.landing {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.landing-content {
+  border: #ffd5fb 0.2rem solid;
+  padding: 1.25rem;
+  font-size: 2.1rem;
+  margin-top: 12rem;
+  background-image: linear-gradient(150deg, #ffd5fb, #b588e0);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.landing-content p {
+  font-size: 1rem;
+}
+
+.sub-head-dash {
+  display: none;
+  padding: 0;
+}
+
+/* --------------------------- SEE BELOW --------------------------- */
+
+.see-below {
+  color: #ffd5fb;
+  ;
+}
+
+.upsidedown {
+  display: inline-block;
+  color: #ffd5fb;
+  font-size: 1.875rem;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  letter-spacing: 0.3125rem;
+  -webkit-transform: rotate(90deg);
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+  z-index: 1;
+}
+
+@keyframes bounce {
+  from {
+    margin-top: 35px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+
+.content {
+  color: lavenderblush;
+}
+
+.about-picture {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.john {
+  height: auto;
+  width: 10rem;
+}
+
+.words {
+  font-size: 1rem;
+}
+
+/* --------------------------- PROJECTS --------------------------- */
+
+.sub-title {
+  color: #b588e0;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.screenshot,
+img {
+  height: auto;
+  box-shadow: #ffd5fb 4px 4px;
+}
+
+.scholder img{
+  height: auto;
+  width: 35rem;
+}
+
+.carder{
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.carder p{
+  padding: 1rem 0 ;
+  font-size: 1.3rem;
+}
+
+.proj-title{
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.what{
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.madeWith{
+  font-size: 1rem;
+}
+
+/* --------------------------- LINKS --------------------------- */
+.nav {
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  /* text-shadow: 2px 2px 1px var(--shadow-pink) */
+}
+
+#links i {
+  color: lavenderblush;
+  height: 50px;
+  transition: 0.8s ease;
+  padding-bottom: 20px;
+
+}
+
+#links i:hover {
+  height: 50px;
+  opacity: 0.6;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.contact-words{
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+/* --------------------------- FOOTER --------------------------- */
+
+footer {
+  padding: 1rem;
+}
+
+/* --------------------------- MEDIA QUERY --------------------------- */
+
+@media (min-width: 43em) {
+  .content img {
+    width: auto;
+  }
+}
+
+/* --------------------------- smaller dt --------------------------- */
+@media (min-width: 62em) {
+
+  .landing-content {
+    padding: 20px;
+    font-size: 80px;
+    margin-top: 300px;
+  }
+
+  .sub-head-dash {
+    display: inline-block;
+  }
+
+  .words {
+    font-size: 1.3rem;
+    padding: 2.5rem 0 0 2rem;
+  }
+
+  .upsidedown {
+    margin-top: -20px;
+    font-size: 5rem;
+  }
+
+  @keyframes bounce {
+    from {
+      margin-top: -20px;
+    }
+    to {
+      margin-top: 10px;
+    }
+  }
+
+  /* --------------------------- PROJECTS --------------------------- */
+
+  .sub-title h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* --------------------------- BIGGER DESKTOPS --------------------------- */
+
+/* @media (min-width: 82em) {
+ 
+} */
