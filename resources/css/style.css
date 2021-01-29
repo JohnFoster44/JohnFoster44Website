@@ -1,259 +1,253 @@
-/*-----general---------------------------------------------*/
-:root {
-  --main-white: #fff5fd;
-  --alt-white: #fffdff30;
-  --main-black: #383838;
-  --alt-black: #38383840;
-  --link-blue: #007bff;
-  --light-pink: #ffedfb;
+/* --------------------------- MOBILE FIRST --------------------------- */
+* {
+  font-family: "Times New Roman", Times, serif;
 }
 
 body {
-  background-color: #fff5fd;
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 1em;
-  background-image: url("../img/guillaume-galtier-493400-unsplash.jpg");
-  background-attachment: fixed;
-  color: #fff5fd;
-  overflow-x: hidden;
-  padding-top: 10px;
+  background-color: black;
+  z-index: -101;
+  font-size: 16px;
 }
 
 h1 {
+  color: #ffd5fb;
+  margin: 0 0.6em;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: #ffd5fb solid 1px;
+  width: fit-content;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.sep {
+  padding: 2rem;
+}
+
+/* --------------------------- VIDEO BKG --------------------------- */
+
+#full_sc_vid {
+  position: fixed;
+  width: auto;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+/* --------------------------- TITLE & SUBTITLE --------------------------- */
+
+.landing {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
-h2,
-h3,
-h4, h5 {
-  font-family: "Calistoga", cursive;
-  color: var(--main-black);
+.landing-content {
+  border: #ffd5fb 0.2rem solid;
+  padding: 1.25rem;
+  font-size: 2.1rem;
+  margin-top: 12rem;
+  background-image: linear-gradient(150deg, #ffd5fb, #b588e0);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
-p {
-  font-weight: 500;
+.landing-content p {
+  font-size: 1rem;
 }
 
-footer {
-  color: var(--main-white);
-  font-weight: 600;
+.sub-head-dash {
+  display: none;
+  padding: 0;
 }
 
-/* bio frame */
-.frame {
-  border: 5px solid var(--main-black);
-  background-color: var(--alt-white);
-  padding-top: 20px;
+/* --------------------------- SEE BELOW --------------------------- */
+
+.see-below {
+  color: #ffd5fb;
+  ;
 }
 
-/* nav bar */
+.upsidedown {
+  display: inline-block;
+  color: #ffd5fb;
+  font-size: 1.875rem;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  letter-spacing: 0.3125rem;
+  -webkit-transform: rotate(90deg);
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+  z-index: 1;
+}
+
+@keyframes bounce {
+  from {
+    margin-top: 35px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+
+.content {
+  color: lavenderblush;
+}
+
+.about-picture {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.john {
+  height: auto;
+  width: 10rem;
+}
+
+.words {
+  font-size: 1rem;
+}
+
+/* --------------------------- PROJECTS --------------------------- */
+
+.sub-title {
+  color: #b588e0;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.screenshot,
+img {
+  height: auto;
+  box-shadow: #ffd5fb 4px 4px;
+}
+
+.scholder img{
+  height: auto;
+  width: 35rem;
+}
+
+.carder{
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.carder p{
+  padding: 1rem 0 ;
+  font-size: 1.3rem;
+}
+
+.proj-title{
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.what{
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.madeWith{
+  font-size: 1rem;
+}
+
+/* --------------------------- LINKS --------------------------- */
 .nav {
   justify-content: space-around;
   list-style: none;
   text-align: center;
-}
-
-#my-pic {
-  display: none;
-  margin: 0 auto;
-  height: 200px;
-  width: auto;
-  padding: 10px 0 20px 0;
-}
-
-#name {
-  font-family: "Calistoga", cursive;
-  text-align: center;
-  color: var(--main-black);
-}
-
-#name h1 {
-  font-size: 3em;
-}
-
-#bio {
-  padding: 10px 20px 0 20px;
-  font-size: 1.1em;
-  color: var(--main-black);
-  text-align: left;
-}
-
-/* page navigation */
-#anchor {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  /* text-shadow: 2px 2px 1px var(--shadow-pink) */
 }
 
 #links i {
-  color: var(--main-black);
+  color: lavenderblush;
   height: 50px;
   transition: 0.8s ease;
+  padding-bottom: 20px;
+
 }
 
 #links i:hover {
   height: 50px;
   opacity: 0.6;
-  filter: blur(8px);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 
-#projects {
-  color: var(--main-black);
-  text-align: center;
-  padding-top: 15px;
+.contact-words{
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+/* --------------------------- FOOTER --------------------------- */
+
+footer {
+  padding: 1rem;
 }
 
-#projects a {
-  color: #007bff;
-}
+/* --------------------------- MEDIA QUERY --------------------------- */
 
-#proj-pics {
-  margin: 0 auto;
-  height: auto;
-  width: 200px;
-  padding: 5px;
-  border-radius: 10%;
-}
-
-.project-outline {
-  border: 2px solid var(--main-black);
-  background-color: var(--alt-white);
-  margin: 5px 5px;
-  border-radius: 5px;
-}
-
-/* design pages */
-
-#showcase {
-  display: flex;
-  padding: 30px 0;
-}
-
-#showcase p {
-  font-size: 23px;
-}
-
-/* sugar glaze pic */
-#showcasePic {
-  display: flex;
-  max-width: 93vh;
-  margin: 0;
-  padding: 0;
-  align-items: flex-start;
-}
-
-#showcasePic img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* dating pic */
-#showcasePic2 {
-  display: flex;
-  height: auto;
-  width: 50%;
-  margin: 50px 0 30px 0;
-  align-items: flex-start;
-}
-
-#showcasePic2 img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-/* screenshots */
-.screenshot {
-  display: flex;
-  max-width: 93vh;
-  margin: 0;
-  padding: 0;
-  align-items: flex-start;
-}
-
-.screenshot img {
-  width: 90vw;
-  height: auto;
-  max-height: 100%;
-}
-
-.subhead {
-  margin: 20px 0;
-  font-size: 30px;
-  padding-top: 40px;
-  border-top: 5px solid var(--main-black);
-}
-
-@media (min-width: 575px) {
-  #my-pic {
-    display: block;
-    padding-top: 70px;
-    height: 250px;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .top {
-    padding-top: 20px;
-  }
-
-  .frame {
-    margin-top: 20px;
-    color: var(--main-black);
-    border: 5px solid var(--main-black);
-    background-color: var(--alt-white);
-    padding-top: 20px;
-    box-shadow: 0 4px 8px 0 var(--alt-black), 0 6px 20px 0 var(--alt-black);
-  }
-
-  #name {
-    text-align: left;
-  }
-
-  #name h1 {
-    font-size: 4em;
-  }
-
-  #links {
-    padding-top: 5px;
-  }
-
-  #bio {
-    font-size: 1.5em;
-  }
-
-  #bio h3 {
-    font-size: 1.5em;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  #my-pic {
-    display: block;
-    height: 350px;
+@media (min-width: 43em) {
+  .content img {
     width: auto;
-    padding-top: 0;
-  }
-
-  #projects h4 {
-    font-size: 2.3em;
-    padding: 15px 0;
-  }
-
-  #projects h5 {
-    padding: 15px 0;
-    font-size: 1.3em;
-  }
-
-  #projects p {
-    font-size: 1.3em;
-    padding: 20px 20px 0 50px;
-    text-align: left;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  
-    
-}*/
+/* --------------------------- smaller dt --------------------------- */
+@media (min-width: 62em) {
+
+  .landing-content {
+    padding: 20px;
+    font-size: 80px;
+    margin-top: 300px;
+  }
+
+  .sub-head-dash {
+    display: inline-block;
+  }
+
+  .words {
+    font-size: 1.3rem;
+    padding: 2.5rem 0 0 2rem;
+  }
+
+  .upsidedown {
+    margin-top: -20px;
+    font-size: 5rem;
+  }
+
+  @keyframes bounce {
+    from {
+      margin-top: -20px;
+    }
+    to {
+      margin-top: 10px;
+    }
+  }
+
+  /* --------------------------- PROJECTS --------------------------- */
+
+  .sub-title h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* --------------------------- BIGGER DESKTOPS --------------------------- */
+
+/* @media (min-width: 82em) {
+ 
+} */
