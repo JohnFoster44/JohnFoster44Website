@@ -156,6 +156,10 @@ img {
   text-transform: uppercase;
 }
 
+#p-title-link{
+  color: #ffd5fb;
+}
+
 .what{
   font-size: 1.5rem;
   font-style: italic;
