@@ -11,7 +11,6 @@ body {
 
 h1 {
   color: #ffd5fb;
-  margin: 0 0.6em;
   padding: 1rem;
   font-size: 1.5rem;
   border: #ffd5fb solid 1px;
@@ -225,8 +224,8 @@ footer {
   }
 
   .words {
-    font-size: 1.3rem;
-    padding: 2.5rem 0 0 2rem;
+    font-size: 1.6rem;
+    padding-top: 5.5rem;
   }
 
   .upsidedown {
