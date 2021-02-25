@@ -15,7 +15,7 @@ h1 {
   padding: 1rem;
   font-size: 1.5rem;
   border: #ffd5fb solid 1px;
-  width: fit-content;
+  width: max-content;
   font-style: italic;
   text-transform: uppercase;
 }
@@ -118,7 +118,8 @@ h1 {
 }
 
 .words {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 /* --------------------------- PROJECTS --------------------------- */
