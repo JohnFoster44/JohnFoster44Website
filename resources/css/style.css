@@ -1,4 +1,6 @@
+/* JOHN FOSTER WORLDWIDE */
 /* --------------------------- MOBILE FIRST --------------------------- */
+
 * {
   font-family: "Times New Roman", Times, serif;
 }
@@ -170,6 +172,7 @@ img {
 }
 
 /* --------------------------- LINKS --------------------------- */
+
 .nav {
   justify-content: space-around;
   list-style: none;
@@ -196,6 +199,7 @@ img {
   font-size: 1.5rem;
   padding-bottom: 2rem;
 }
+
 /* --------------------------- FOOTER --------------------------- */
 
 footer {
@@ -211,6 +215,7 @@ footer {
 }
 
 /* --------------------------- smaller dt --------------------------- */
+
 @media (min-width: 62em) {
 
   .landing-content {
@@ -249,9 +254,3 @@ footer {
     margin-bottom: 1rem;
   }
 }
-
-/* --------------------------- BIGGER DESKTOPS --------------------------- */
-
-/* @media (min-width: 82em) {
- 
-} */
