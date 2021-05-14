@@ -65,7 +65,7 @@ h1 {
 }
 
 .landing-content p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .sub-head-dash {
@@ -77,7 +77,10 @@ h1 {
 
 .see-below {
   color: #ffd5fb;
-  ;
+}
+
+a.see-below{
+  text-decoration: none;
 }
 
 .upsidedown {
@@ -230,7 +233,7 @@ footer {
 
   .words {
     font-size: 1.6rem;
-    padding-top: 5.5rem;
+    padding-top: 1.5rem;
   }
 
   .upsidedown {
@@ -252,5 +255,13 @@ footer {
   .sub-title h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 78em) {
+
+  .words {
+    font-size: 1.6rem;
+    padding-top: 5.5rem;
   }
 }
