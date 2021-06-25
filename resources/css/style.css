@@ -165,6 +165,11 @@ img {
 
 #p-title-link{
   color: #ffd5fb;
+  transition: 0.3s ease;
+}
+
+#p-title-link:hover{
+  color: #b588e0;
 }
 
 .what{
@@ -209,6 +214,10 @@ img {
 
 a{
   color: #ffd5fb;
+  transition: 0.2s ease;
+}
+a:hover{
+  color: #b588e0;
 }
 
 /* --------------------------- FOOTER --------------------------- */
