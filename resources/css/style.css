@@ -22,7 +22,8 @@ h1 {
 }
 
 .sep {
-  padding: 2rem;
+  margin: 1rem 0 3rem 0;
+  border-top: dashed 1px;
 }
 
 /* --------------------------- VIDEO BKG --------------------------- */
@@ -124,6 +125,7 @@ a.see-below{
 .words {
   font-size: 1.3rem;
   text-align: center;
+  line-height: 3rem;
 }
 
 /* --------------------------- PROJECTS --------------------------- */
@@ -177,18 +179,20 @@ img {
 /* --------------------------- LINKS --------------------------- */
 
 .nav {
-  justify-content: space-around;
-  list-style: none;
-  text-align: center;
+  list-style: none;;
+  background-image: linear-gradient(150deg, #ffd5fb, #b588e0);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   /* text-shadow: 2px 2px 1px var(--shadow-pink) */
 }
 
 #links i {
   color: lavenderblush;
-  height: 50px;
   transition: 0.8s ease;
-  padding-bottom: 20px;
-
+  padding: 0 1rem;
 }
 
 #links i:hover {
@@ -200,13 +204,20 @@ img {
 
 .contact-words{
   font-size: 1.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+a{
+  color: #ffd5fb;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 
 footer {
-  padding: 1rem;
+  justify-content: space-between;
+  margin: 0rem 0.5rem;
+  color: #ffd5fb;
+  border-top: dashed 1px;
 }
 
 /* --------------------------- MEDIA QUERY --------------------------- */
